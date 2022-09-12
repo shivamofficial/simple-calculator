@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+
+
+
+            <input type="text" name="output" id="result" placeholder="0">
+            <button onclick="clr()" class="operator">clr</button>
+            <button onclick="del()" class="operator">del</button>
+
+            <button onclick="display('%')" class="operator"   onkeydown="myFunction(event)">%</button>
+            <button onclick="display('+')" class="operator"  onkeydown="myFunction(event)">+</button>
+            <button onclick="display('1')"   onkeydown="myFunction(event)">1</button>
+            <button onclick="display('2')"  onkeydown="myFunction(event)">2</button>
+            <button onclick="display('3')"   onkeydown="myFunction(event)">3</button>
+            <button onclick="display('-')" class="operator" >-</button>
+            <button onclick="display('4')"  onkeydown="myFunction(event)" >4</button>
+            <button onclick="display('5')"  onkeydown="myFunction(event)">5</button>
+            <button onclick="display('6')"  onkeydown="myFunction(event)">6</button>
+            <button onclick="display('*')" class="operator" onkeydown="myFunction(event)" >*</button>
+            <button onclick="display('7')"   onkeydown="myFunction(event)">7</button>
+            <button onclick="display('8')"  onkeydown="myFunction(event)" >8</button>
+            <button onclick="display('9')"  onkeydown="myFunction(event)">9</button>
+            <button onclick="display('/')" class="operator"  onkeydown="myFunction(event)">/</button>
+            <button onclick="display('0')"   onkeydown="myFunction(event)">0</button>
+            <button onclick="display('.')"  onkeydown="myFunction(event)">.</button>
+            <button onclick="solve()" class="equal">=</button>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
